@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  width: auto;
+  height: 100vh;
+}
+
+.content-left {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-right {
+  display: flex;
+  background-color: rgb(243, 243, 242);
+
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* for odin logo and text */
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+
+img {
+  height: 100px;
+}
+
+.personalInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5px;
+  align-items: ;
+}
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5px;
+}
+.creditional {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5px;
+}
+#signUp {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0px 4px 5px rgb(207, 206, 204);
+  justify-content: space-between;
+  font-size: 1rem;
+  width: 100%;
+  height: 40%;
+  text-align: left;
+  padding: 20px;
+  gap: 5px;
+}
+.descHead {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+#btn{
+  align-items: flex-start;
+  font-size: 1.5rem;
+  padding: 5px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: rgb(10, 190, 91);
+  color: white;
+}
+.sub
+{
+  display: flex;
+  justify-content: left;
+}
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url('fonts/Norse-Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+#title h2 {
+  font-family: 'Norse-Bold', Arial, sans-serif;
+  font-size: 24px;
+}
+ /* Form styles */
+ form {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Label and input styles */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Create Account button styles */
+.create-account-btn {
+  background-color: #596D48;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .content-left, .content-right {
+    flex: auto;
+    text-align: center;
+  }
+}
